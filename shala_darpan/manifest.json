@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+	"name": "ShalaDarpan Helper Client",
+	"version": "1.0.0",
+	"content_scripts":[
+		{
+			"matches":[
+				"<all_urls>"
+			],
+			"js": ["content.js"]
+		}
+	],
+	"background":{
+		"scripts": ["background.js"]
+	},
+	"permissions": ["activeTab"],
+	"browser_action":{
+		"default_icon": "app_logo.png",
+		"default_popup": "popup.html",
+		"default_title": "ShalaDarpan"
+	},
+	"web_accessible_resources": [
+		"script_th_Or.js"
+	]
+	
+}
